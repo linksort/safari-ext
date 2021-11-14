@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		FA18C009274195DA006069D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18C008274195DA006069D0 /* AppDelegate.swift */; };
 		FA18C00D274195DA006069D0 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = FA18C00B274195DA006069D0 /* Main.html */; };
-		FA18C00F274195DA006069D0 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA18C00E274195DA006069D0 /* Icon.png */; };
 		FA18C011274195DA006069D0 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = FA18C010274195DA006069D0 /* Style.css */; };
 		FA18C013274195DA006069D0 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = FA18C012274195DA006069D0 /* Script.js */; };
 		FA18C015274195DA006069D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA18C014274195DA006069D0 /* ViewController.swift */; };
@@ -33,6 +32,7 @@
 		FA18C06127419794006069D0 /* popover.css in Resources */ = {isa = PBXBuildFile; fileRef = FA18C05127419794006069D0 /* popover.css */; };
 		FA18C06227419794006069D0 /* popover.js in Resources */ = {isa = PBXBuildFile; fileRef = FA18C05227419794006069D0 /* popover.js */; };
 		FA18C06327419794006069D0 /* inter-medium.woff in Resources */ = {isa = PBXBuildFile; fileRef = FA18C05327419794006069D0 /* inter-medium.woff */; };
+		FA18C06527419CDD006069D0 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA18C06427419CDD006069D0 /* Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +63,6 @@
 		FA18C005274195DA006069D0 /* Save to Liksort.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Save to Liksort.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA18C008274195DA006069D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA18C00C274195DA006069D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
-		FA18C00E274195DA006069D0 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		FA18C010274195DA006069D0 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
 		FA18C012274195DA006069D0 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
 		FA18C014274195DA006069D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +90,7 @@
 		FA18C05127419794006069D0 /* popover.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = popover.css; sourceTree = "<group>"; };
 		FA18C05227419794006069D0 /* popover.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = popover.js; sourceTree = "<group>"; };
 		FA18C05327419794006069D0 /* inter-medium.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "inter-medium.woff"; sourceTree = "<group>"; };
+		FA18C06427419CDD006069D0 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				FA18C00B274195DA006069D0 /* Main.html */,
-				FA18C00E274195DA006069D0 /* Icon.png */,
+				FA18C06427419CDD006069D0 /* Icon.png */,
 				FA18C010274195DA006069D0 /* Style.css */,
 				FA18C012274195DA006069D0 /* Script.js */,
 			);
@@ -269,11 +269,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA18C00F274195DA006069D0 /* Icon.png in Resources */,
 				FA18C018274195DA006069D0 /* Main.storyboard in Resources */,
 				FA18C013274195DA006069D0 /* Script.js in Resources */,
 				FA18C00D274195DA006069D0 /* Main.html in Resources */,
 				FA18C01A274195DB006069D0 /* Assets.xcassets in Resources */,
+				FA18C06527419CDD006069D0 /* Icon.png in Resources */,
 				FA18C011274195DA006069D0 /* Style.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
