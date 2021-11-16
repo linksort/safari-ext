@@ -29,6 +29,19 @@ chrome.storage.local.get(["token"], (store) => {
   chrome.tabs.query({ active: true, lastFocusedWindow: true }, (tabs) => {
     const tab = tabs[0];
 
+    if (!tab.url.startsWith("http")) {
+      const split = tab.url.split(":");
+      if (split.length > 0 && split[0].includes("extension")) {
+        renderError(
+          "You cannot save your extension's options page to Linksort"
+        );
+        return;
+      }
+
+      renderError("This cannot be saved to Linksort");
+      return;
+    }
+
     fetch(`${BASE_URI}/api/links`, {
       headers: new Headers({
         "Content-Type": "application/json",

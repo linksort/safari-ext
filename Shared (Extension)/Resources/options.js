@@ -7,49 +7,7 @@
   const formContent = document.getElementById("formcontent");
   const form = document.getElementById("form");
 
-  function showLogin() {
-    clearButton.style.display = "none";
-    message.innerText =
-      "Before you can use this extension, you'll have to sign in.";
-    authenticateButton.style.display = "inline-block";
-    formContent.innerHTML = `
-        <div>
-          <p class="error" id="errorcontainer"></p>
-        </div>
-        <label>
-          <span>Email</span>
-          <input type="email" name="email" id="email" required autofocus>
-        </label>
-        <label>
-          <span>Password</span>
-          <input type="password" name="password" id="password" required>
-        </label>
-      `;
-  }
-
-  function showLogout() {
-    message.innerHTML =
-      "You are signed into Linksort. &#x1f60a <br /><br /> You can now close this window and save links as you browse by clicking the Linksort icon in the upper toolbar.";
-    clearButton.style.display = "inline-block";
-    authenticateButton.style.display = "none";
-    formContent.innerHTML = "";
-  }
-
-  chrome.storage.local.get(["token"], (values) => {
-    if (values.token && values.token !== NULL) {
-      showLogout();
-    } else {
-      showLogin();
-    }
-  });
-
-  clearButton.addEventListener("click", () => {
-    chrome.storage.local.set({ token: NULL }, () => {
-      showLogin();
-    });
-  });
-
-  form.addEventListener("submit", (e) => {
+  function handleSubmit(e) {
     e.preventDefault();
 
     authenticateButton.disabled = true;
@@ -87,5 +45,52 @@
             "Something went wrong.";
         });
     });
+  }
+
+  function showLogin() {
+    clearButton.style.display = "none";
+    message.innerText =
+      "Before you can use this extension, you'll have to sign in.";
+    authenticateButton.style.display = "inline-block";
+    formContent.innerHTML = `
+        <div>
+          <p class="error" id="errorcontainer"></p>
+        </div>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" id="email" required autofocus>
+        </label>
+        <label>
+          <span>Password</span>
+          <input type="password" name="password" id="password" required>
+        </label>
+      `;
+
+    form.addEventListener("submit", handleSubmit);
+  }
+
+  function showLogout() {
+    message.innerHTML =
+      "You are signed into Linksort. &#x1f60a <br /><br /> You can now close this window and save links as you browse by choosing the Linksort icon in the upper toolbar on desktop or the extensions menu on mobile.";
+    clearButton.style.display = "inline-block";
+    authenticateButton.style.display = "none";
+    formContent.innerHTML = "";
+    form.removeEventListener("submit", handleSubmit);
+
+    clearButton.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      chrome.storage.local.set({ token: NULL }, () => {
+        window.location.reload();
+      });
+    });
+  }
+
+  chrome.storage.local.get(["token"], (values) => {
+    if (values.token && values.token !== NULL) {
+      showLogout();
+    } else {
+      showLogin();
+    }
   });
 })();
