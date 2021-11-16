@@ -1,0 +1,1021 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAB1EB5027436E0400CD5C63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1EB4F27436E0400CD5C63 /* AppDelegate.swift */; };
+		FAB1EB5227436E0400CD5C63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1EB5127436E0400CD5C63 /* SceneDelegate.swift */; };
+		FAB1EB5527436E0400CD5C63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EB5327436E0400CD5C63 /* LaunchScreen.storyboard */; };
+		FAB1EB5827436E0400CD5C63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EB5627436E0400CD5C63 /* Main.storyboard */; };
+		FAB1EB6127436E0400CD5C63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1EB6027436E0400CD5C63 /* AppDelegate.swift */; };
+		FAB1EB6427436E0400CD5C63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EB6227436E0400CD5C63 /* Main.storyboard */; };
+		FAB1EB6C27436E0400CD5C63 /* Save to Linksort Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FAB1EB6B27436E0400CD5C63 /* Save to Linksort Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FAB1EB7627436E0400CD5C63 /* Save to Linksort Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FAB1EB7527436E0400CD5C63 /* Save to Linksort Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FAB1EB7C27436E0400CD5C63 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EB3F27436E0400CD5C63 /* Main.html */; };
+		FAB1EB7D27436E0400CD5C63 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EB3F27436E0400CD5C63 /* Main.html */; };
+		FAB1EB7E27436E0400CD5C63 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EB4127436E0400CD5C63 /* Icon.png */; };
+		FAB1EB7F27436E0400CD5C63 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EB4127436E0400CD5C63 /* Icon.png */; };
+		FAB1EB8027436E0400CD5C63 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EB4227436E0400CD5C63 /* Style.css */; };
+		FAB1EB8127436E0400CD5C63 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EB4227436E0400CD5C63 /* Style.css */; };
+		FAB1EB8227436E0400CD5C63 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EB4327436E0400CD5C63 /* Script.js */; };
+		FAB1EB8327436E0400CD5C63 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EB4327436E0400CD5C63 /* Script.js */; };
+		FAB1EB8427436E0400CD5C63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1EB4427436E0400CD5C63 /* ViewController.swift */; };
+		FAB1EB8527436E0400CD5C63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1EB4427436E0400CD5C63 /* ViewController.swift */; };
+		FAB1EB8627436E0400CD5C63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EB4527436E0400CD5C63 /* Assets.xcassets */; };
+		FAB1EB8727436E0400CD5C63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EB4527436E0400CD5C63 /* Assets.xcassets */; };
+		FAB1EB8827436E0400CD5C63 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1EB4727436E0400CD5C63 /* SafariWebExtensionHandler.swift */; };
+		FAB1EB8927436E0400CD5C63 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1EB4727436E0400CD5C63 /* SafariWebExtensionHandler.swift */; };
+		FAB1EBAB27436E0500CD5C63 /* inter-medium.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EB9B27436E0500CD5C63 /* inter-medium.woff2 */; };
+		FAB1EBAC27436E0500CD5C63 /* icon-32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EB9C27436E0500CD5C63 /* icon-32x32.png */; };
+		FAB1EBAD27436E0500CD5C63 /* inter-regular.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EB9D27436E0500CD5C63 /* inter-regular.woff2 */; };
+		FAB1EBAE27436E0500CD5C63 /* icon-256x256.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EB9E27436E0500CD5C63 /* icon-256x256.png */; };
+		FAB1EBAF27436E0500CD5C63 /* inter-regular.woff in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EB9F27436E0500CD5C63 /* inter-regular.woff */; };
+		FAB1EBB027436E0500CD5C63 /* hushed-face.svg in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EBA027436E0500CD5C63 /* hushed-face.svg */; };
+		FAB1EBB127436E0500CD5C63 /* popover.css in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EBA127436E0500CD5C63 /* popover.css */; };
+		FAB1EBB227436E0500CD5C63 /* popover.html in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EBA227436E0500CD5C63 /* popover.html */; };
+		FAB1EBB327436E0500CD5C63 /* options.js in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EBA327436E0500CD5C63 /* options.js */; };
+		FAB1EBB427436E0500CD5C63 /* icon-48x48.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EBA427436E0500CD5C63 /* icon-48x48.png */; };
+		FAB1EBB527436E0500CD5C63 /* popover.js in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EBA527436E0500CD5C63 /* popover.js */; };
+		FAB1EBB627436E0500CD5C63 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EBA627436E0500CD5C63 /* manifest.json */; };
+		FAB1EBB727436E0500CD5C63 /* icon-512x512.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EBA727436E0500CD5C63 /* icon-512x512.png */; };
+		FAB1EBB827436E0500CD5C63 /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EBA827436E0500CD5C63 /* options.html */; };
+		FAB1EBB927436E0500CD5C63 /* inter-medium.woff in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EBA927436E0500CD5C63 /* inter-medium.woff */; };
+		FAB1EBBA27436E0500CD5C63 /* options.css in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EBAA27436E0500CD5C63 /* options.css */; };
+		FAB1EBBB27436E0500CD5C63 /* inter-medium.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EB9B27436E0500CD5C63 /* inter-medium.woff2 */; };
+		FAB1EBBC27436E0500CD5C63 /* icon-32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EB9C27436E0500CD5C63 /* icon-32x32.png */; };
+		FAB1EBBD27436E0500CD5C63 /* inter-regular.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EB9D27436E0500CD5C63 /* inter-regular.woff2 */; };
+		FAB1EBBE27436E0500CD5C63 /* icon-256x256.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EB9E27436E0500CD5C63 /* icon-256x256.png */; };
+		FAB1EBBF27436E0500CD5C63 /* inter-regular.woff in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EB9F27436E0500CD5C63 /* inter-regular.woff */; };
+		FAB1EBC027436E0500CD5C63 /* hushed-face.svg in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EBA027436E0500CD5C63 /* hushed-face.svg */; };
+		FAB1EBC127436E0500CD5C63 /* popover.css in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EBA127436E0500CD5C63 /* popover.css */; };
+		FAB1EBC227436E0500CD5C63 /* popover.html in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EBA227436E0500CD5C63 /* popover.html */; };
+		FAB1EBC327436E0500CD5C63 /* options.js in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EBA327436E0500CD5C63 /* options.js */; };
+		FAB1EBC427436E0500CD5C63 /* icon-48x48.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EBA427436E0500CD5C63 /* icon-48x48.png */; };
+		FAB1EBC527436E0500CD5C63 /* popover.js in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EBA527436E0500CD5C63 /* popover.js */; };
+		FAB1EBC627436E0500CD5C63 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EBA627436E0500CD5C63 /* manifest.json */; };
+		FAB1EBC727436E0500CD5C63 /* icon-512x512.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EBA727436E0500CD5C63 /* icon-512x512.png */; };
+		FAB1EBC827436E0500CD5C63 /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EBA827436E0500CD5C63 /* options.html */; };
+		FAB1EBC927436E0500CD5C63 /* inter-medium.woff in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EBA927436E0500CD5C63 /* inter-medium.woff */; };
+		FAB1EBCA27436E0500CD5C63 /* options.css in Resources */ = {isa = PBXBuildFile; fileRef = FAB1EBAA27436E0500CD5C63 /* options.css */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAB1EB6D27436E0400CD5C63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAB1EB3927436E0400CD5C63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAB1EB6A27436E0400CD5C63;
+			remoteInfo = "Save to Linksort Extension (iOS)";
+		};
+		FAB1EB7727436E0400CD5C63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAB1EB3927436E0400CD5C63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAB1EB7427436E0400CD5C63;
+			remoteInfo = "Save to Linksort Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FAB1EB8F27436E0400CD5C63 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FAB1EB6C27436E0400CD5C63 /* Save to Linksort Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB1EB9627436E0400CD5C63 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FAB1EB7627436E0400CD5C63 /* Save to Linksort Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FAB1EB4027436E0400CD5C63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		FAB1EB4127436E0400CD5C63 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		FAB1EB4227436E0400CD5C63 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		FAB1EB4327436E0400CD5C63 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		FAB1EB4427436E0400CD5C63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAB1EB4527436E0400CD5C63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAB1EB4727436E0400CD5C63 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		FAB1EB4C27436E0400CD5C63 /* Save to Linksort.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Save to Linksort.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB1EB4F27436E0400CD5C63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAB1EB5127436E0400CD5C63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FAB1EB5427436E0400CD5C63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAB1EB5727436E0400CD5C63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAB1EB5927436E0400CD5C63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB1EB5E27436E0400CD5C63 /* Save to Linksort.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Save to Linksort.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB1EB6027436E0400CD5C63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAB1EB6327436E0400CD5C63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAB1EB6527436E0400CD5C63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB1EB6627436E0400CD5C63 /* Save to Linksort.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Save to Linksort.entitlements"; sourceTree = "<group>"; };
+		FAB1EB6B27436E0400CD5C63 /* Save to Linksort Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Save to Linksort Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB1EB7027436E0400CD5C63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB1EB7527436E0400CD5C63 /* Save to Linksort Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Save to Linksort Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB1EB7A27436E0400CD5C63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB1EB7B27436E0400CD5C63 /* Save to Linksort.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Save to Linksort.entitlements"; sourceTree = "<group>"; };
+		FAB1EB9B27436E0500CD5C63 /* inter-medium.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "inter-medium.woff2"; path = "Resources/inter-medium.woff2"; sourceTree = "<group>"; };
+		FAB1EB9C27436E0500CD5C63 /* icon-32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-32x32.png"; path = "Resources/icon-32x32.png"; sourceTree = "<group>"; };
+		FAB1EB9D27436E0500CD5C63 /* inter-regular.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "inter-regular.woff2"; path = "Resources/inter-regular.woff2"; sourceTree = "<group>"; };
+		FAB1EB9E27436E0500CD5C63 /* icon-256x256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-256x256.png"; path = "Resources/icon-256x256.png"; sourceTree = "<group>"; };
+		FAB1EB9F27436E0500CD5C63 /* inter-regular.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "inter-regular.woff"; path = "Resources/inter-regular.woff"; sourceTree = "<group>"; };
+		FAB1EBA027436E0500CD5C63 /* hushed-face.svg */ = {isa = PBXFileReference; lastKnownFileType = text; name = "hushed-face.svg"; path = "Resources/hushed-face.svg"; sourceTree = "<group>"; };
+		FAB1EBA127436E0500CD5C63 /* popover.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = popover.css; path = Resources/popover.css; sourceTree = "<group>"; };
+		FAB1EBA227436E0500CD5C63 /* popover.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popover.html; path = Resources/popover.html; sourceTree = "<group>"; };
+		FAB1EBA327436E0500CD5C63 /* options.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = options.js; path = Resources/options.js; sourceTree = "<group>"; };
+		FAB1EBA427436E0500CD5C63 /* icon-48x48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-48x48.png"; path = "Resources/icon-48x48.png"; sourceTree = "<group>"; };
+		FAB1EBA527436E0500CD5C63 /* popover.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popover.js; path = Resources/popover.js; sourceTree = "<group>"; };
+		FAB1EBA627436E0500CD5C63 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = Resources/manifest.json; sourceTree = "<group>"; };
+		FAB1EBA727436E0500CD5C63 /* icon-512x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-512x512.png"; path = "Resources/icon-512x512.png"; sourceTree = "<group>"; };
+		FAB1EBA827436E0500CD5C63 /* options.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = options.html; path = Resources/options.html; sourceTree = "<group>"; };
+		FAB1EBA927436E0500CD5C63 /* inter-medium.woff */ = {isa = PBXFileReference; lastKnownFileType = file; name = "inter-medium.woff"; path = "Resources/inter-medium.woff"; sourceTree = "<group>"; };
+		FAB1EBAA27436E0500CD5C63 /* options.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = options.css; path = Resources/options.css; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAB1EB4927436E0400CD5C63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB1EB5B27436E0400CD5C63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB1EB6827436E0400CD5C63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB1EB7227436E0400CD5C63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAB1EB3827436E0400CD5C63 = {
+			isa = PBXGroup;
+			children = (
+				FAB1EB3D27436E0400CD5C63 /* Shared (App) */,
+				FAB1EB4627436E0400CD5C63 /* Shared (Extension) */,
+				FAB1EB4E27436E0400CD5C63 /* iOS (App) */,
+				FAB1EB5F27436E0400CD5C63 /* macOS (App) */,
+				FAB1EB6F27436E0400CD5C63 /* iOS (Extension) */,
+				FAB1EB7927436E0400CD5C63 /* macOS (Extension) */,
+				FAB1EB4D27436E0400CD5C63 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAB1EB3D27436E0400CD5C63 /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1EB4427436E0400CD5C63 /* ViewController.swift */,
+				FAB1EB4527436E0400CD5C63 /* Assets.xcassets */,
+				FAB1EB3E27436E0400CD5C63 /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		FAB1EB3E27436E0400CD5C63 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1EB3F27436E0400CD5C63 /* Main.html */,
+				FAB1EB4127436E0400CD5C63 /* Icon.png */,
+				FAB1EB4227436E0400CD5C63 /* Style.css */,
+				FAB1EB4327436E0400CD5C63 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FAB1EB4627436E0400CD5C63 /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1EB9A27436E0500CD5C63 /* Resources */,
+				FAB1EB4727436E0400CD5C63 /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		FAB1EB4D27436E0400CD5C63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1EB4C27436E0400CD5C63 /* Save to Linksort.app */,
+				FAB1EB5E27436E0400CD5C63 /* Save to Linksort.app */,
+				FAB1EB6B27436E0400CD5C63 /* Save to Linksort Extension.appex */,
+				FAB1EB7527436E0400CD5C63 /* Save to Linksort Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAB1EB4E27436E0400CD5C63 /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1EB4F27436E0400CD5C63 /* AppDelegate.swift */,
+				FAB1EB5127436E0400CD5C63 /* SceneDelegate.swift */,
+				FAB1EB5327436E0400CD5C63 /* LaunchScreen.storyboard */,
+				FAB1EB5627436E0400CD5C63 /* Main.storyboard */,
+				FAB1EB5927436E0400CD5C63 /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		FAB1EB5F27436E0400CD5C63 /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1EB6027436E0400CD5C63 /* AppDelegate.swift */,
+				FAB1EB6227436E0400CD5C63 /* Main.storyboard */,
+				FAB1EB6527436E0400CD5C63 /* Info.plist */,
+				FAB1EB6627436E0400CD5C63 /* Save to Linksort.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		FAB1EB6F27436E0400CD5C63 /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1EB7027436E0400CD5C63 /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		FAB1EB7927436E0400CD5C63 /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1EB7A27436E0400CD5C63 /* Info.plist */,
+				FAB1EB7B27436E0400CD5C63 /* Save to Linksort.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		FAB1EB9A27436E0500CD5C63 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1EB9B27436E0500CD5C63 /* inter-medium.woff2 */,
+				FAB1EB9C27436E0500CD5C63 /* icon-32x32.png */,
+				FAB1EB9D27436E0500CD5C63 /* inter-regular.woff2 */,
+				FAB1EB9E27436E0500CD5C63 /* icon-256x256.png */,
+				FAB1EB9F27436E0500CD5C63 /* inter-regular.woff */,
+				FAB1EBA027436E0500CD5C63 /* hushed-face.svg */,
+				FAB1EBA127436E0500CD5C63 /* popover.css */,
+				FAB1EBA227436E0500CD5C63 /* popover.html */,
+				FAB1EBA327436E0500CD5C63 /* options.js */,
+				FAB1EBA427436E0500CD5C63 /* icon-48x48.png */,
+				FAB1EBA527436E0500CD5C63 /* popover.js */,
+				FAB1EBA627436E0500CD5C63 /* manifest.json */,
+				FAB1EBA727436E0500CD5C63 /* icon-512x512.png */,
+				FAB1EBA827436E0500CD5C63 /* options.html */,
+				FAB1EBA927436E0500CD5C63 /* inter-medium.woff */,
+				FAB1EBAA27436E0500CD5C63 /* options.css */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAB1EB4B27436E0400CD5C63 /* Save to Linksort (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAB1EB9027436E0400CD5C63 /* Build configuration list for PBXNativeTarget "Save to Linksort (iOS)" */;
+			buildPhases = (
+				FAB1EB4827436E0400CD5C63 /* Sources */,
+				FAB1EB4927436E0400CD5C63 /* Frameworks */,
+				FAB1EB4A27436E0400CD5C63 /* Resources */,
+				FAB1EB8F27436E0400CD5C63 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAB1EB6E27436E0400CD5C63 /* PBXTargetDependency */,
+			);
+			name = "Save to Linksort (iOS)";
+			productName = "Save to Linksort (iOS)";
+			productReference = FAB1EB4C27436E0400CD5C63 /* Save to Linksort.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAB1EB5D27436E0400CD5C63 /* Save to Linksort (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAB1EB9727436E0400CD5C63 /* Build configuration list for PBXNativeTarget "Save to Linksort (macOS)" */;
+			buildPhases = (
+				FAB1EB5A27436E0400CD5C63 /* Sources */,
+				FAB1EB5B27436E0400CD5C63 /* Frameworks */,
+				FAB1EB5C27436E0400CD5C63 /* Resources */,
+				FAB1EB9627436E0400CD5C63 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAB1EB7827436E0400CD5C63 /* PBXTargetDependency */,
+			);
+			name = "Save to Linksort (macOS)";
+			productName = "Save to Linksort (macOS)";
+			productReference = FAB1EB5E27436E0400CD5C63 /* Save to Linksort.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAB1EB6A27436E0400CD5C63 /* Save to Linksort Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAB1EB8C27436E0400CD5C63 /* Build configuration list for PBXNativeTarget "Save to Linksort Extension (iOS)" */;
+			buildPhases = (
+				FAB1EB6727436E0400CD5C63 /* Sources */,
+				FAB1EB6827436E0400CD5C63 /* Frameworks */,
+				FAB1EB6927436E0400CD5C63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Save to Linksort Extension (iOS)";
+			productName = "Save to Linksort Extension (iOS)";
+			productReference = FAB1EB6B27436E0400CD5C63 /* Save to Linksort Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		FAB1EB7427436E0400CD5C63 /* Save to Linksort Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAB1EB9327436E0400CD5C63 /* Build configuration list for PBXNativeTarget "Save to Linksort Extension (macOS)" */;
+			buildPhases = (
+				FAB1EB7127436E0400CD5C63 /* Sources */,
+				FAB1EB7227436E0400CD5C63 /* Frameworks */,
+				FAB1EB7327436E0400CD5C63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Save to Linksort Extension (macOS)";
+			productName = "Save to Linksort Extension (macOS)";
+			productReference = FAB1EB7527436E0400CD5C63 /* Save to Linksort Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAB1EB3927436E0400CD5C63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					FAB1EB4B27436E0400CD5C63 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					FAB1EB5D27436E0400CD5C63 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					FAB1EB6A27436E0400CD5C63 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					FAB1EB7427436E0400CD5C63 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = FAB1EB3C27436E0400CD5C63 /* Build configuration list for PBXProject "Save to Linksort" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAB1EB3827436E0400CD5C63;
+			productRefGroup = FAB1EB4D27436E0400CD5C63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAB1EB4B27436E0400CD5C63 /* Save to Linksort (iOS) */,
+				FAB1EB5D27436E0400CD5C63 /* Save to Linksort (macOS) */,
+				FAB1EB6A27436E0400CD5C63 /* Save to Linksort Extension (iOS) */,
+				FAB1EB7427436E0400CD5C63 /* Save to Linksort Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAB1EB4A27436E0400CD5C63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB1EB7E27436E0400CD5C63 /* Icon.png in Resources */,
+				FAB1EB5527436E0400CD5C63 /* LaunchScreen.storyboard in Resources */,
+				FAB1EB7C27436E0400CD5C63 /* Main.html in Resources */,
+				FAB1EB8227436E0400CD5C63 /* Script.js in Resources */,
+				FAB1EB8627436E0400CD5C63 /* Assets.xcassets in Resources */,
+				FAB1EB5827436E0400CD5C63 /* Main.storyboard in Resources */,
+				FAB1EB8027436E0400CD5C63 /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB1EB5C27436E0400CD5C63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB1EB7F27436E0400CD5C63 /* Icon.png in Resources */,
+				FAB1EB8127436E0400CD5C63 /* Style.css in Resources */,
+				FAB1EB6427436E0400CD5C63 /* Main.storyboard in Resources */,
+				FAB1EB8327436E0400CD5C63 /* Script.js in Resources */,
+				FAB1EB8727436E0400CD5C63 /* Assets.xcassets in Resources */,
+				FAB1EB7D27436E0400CD5C63 /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB1EB6927436E0400CD5C63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB1EBC927436E0500CD5C63 /* inter-medium.woff in Resources */,
+				FAB1EBBF27436E0500CD5C63 /* inter-regular.woff in Resources */,
+				FAB1EBC327436E0500CD5C63 /* options.js in Resources */,
+				FAB1EBBB27436E0500CD5C63 /* inter-medium.woff2 in Resources */,
+				FAB1EBC227436E0500CD5C63 /* popover.html in Resources */,
+				FAB1EBC627436E0500CD5C63 /* manifest.json in Resources */,
+				FAB1EBC727436E0500CD5C63 /* icon-512x512.png in Resources */,
+				FAB1EBC027436E0500CD5C63 /* hushed-face.svg in Resources */,
+				FAB1EBC827436E0500CD5C63 /* options.html in Resources */,
+				FAB1EBC427436E0500CD5C63 /* icon-48x48.png in Resources */,
+				FAB1EBBD27436E0500CD5C63 /* inter-regular.woff2 in Resources */,
+				FAB1EBC127436E0500CD5C63 /* popover.css in Resources */,
+				FAB1EBBC27436E0500CD5C63 /* icon-32x32.png in Resources */,
+				FAB1EBC527436E0500CD5C63 /* popover.js in Resources */,
+				FAB1EBCA27436E0500CD5C63 /* options.css in Resources */,
+				FAB1EBBE27436E0500CD5C63 /* icon-256x256.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB1EB7327436E0400CD5C63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB1EBB927436E0500CD5C63 /* inter-medium.woff in Resources */,
+				FAB1EBAF27436E0500CD5C63 /* inter-regular.woff in Resources */,
+				FAB1EBB327436E0500CD5C63 /* options.js in Resources */,
+				FAB1EBAB27436E0500CD5C63 /* inter-medium.woff2 in Resources */,
+				FAB1EBB227436E0500CD5C63 /* popover.html in Resources */,
+				FAB1EBB627436E0500CD5C63 /* manifest.json in Resources */,
+				FAB1EBB727436E0500CD5C63 /* icon-512x512.png in Resources */,
+				FAB1EBB027436E0500CD5C63 /* hushed-face.svg in Resources */,
+				FAB1EBB827436E0500CD5C63 /* options.html in Resources */,
+				FAB1EBB427436E0500CD5C63 /* icon-48x48.png in Resources */,
+				FAB1EBAD27436E0500CD5C63 /* inter-regular.woff2 in Resources */,
+				FAB1EBB127436E0500CD5C63 /* popover.css in Resources */,
+				FAB1EBAC27436E0500CD5C63 /* icon-32x32.png in Resources */,
+				FAB1EBB527436E0500CD5C63 /* popover.js in Resources */,
+				FAB1EBBA27436E0500CD5C63 /* options.css in Resources */,
+				FAB1EBAE27436E0500CD5C63 /* icon-256x256.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAB1EB4827436E0400CD5C63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB1EB8427436E0400CD5C63 /* ViewController.swift in Sources */,
+				FAB1EB5027436E0400CD5C63 /* AppDelegate.swift in Sources */,
+				FAB1EB5227436E0400CD5C63 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB1EB5A27436E0400CD5C63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB1EB8527436E0400CD5C63 /* ViewController.swift in Sources */,
+				FAB1EB6127436E0400CD5C63 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB1EB6727436E0400CD5C63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB1EB8827436E0400CD5C63 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB1EB7127436E0400CD5C63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB1EB8927436E0400CD5C63 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAB1EB6E27436E0400CD5C63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAB1EB6A27436E0400CD5C63 /* Save to Linksort Extension (iOS) */;
+			targetProxy = FAB1EB6D27436E0400CD5C63 /* PBXContainerItemProxy */;
+		};
+		FAB1EB7827436E0400CD5C63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAB1EB7427436E0400CD5C63 /* Save to Linksort Extension (macOS) */;
+			targetProxy = FAB1EB7727436E0400CD5C63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAB1EB3F27436E0400CD5C63 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAB1EB4027436E0400CD5C63 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		FAB1EB5327436E0400CD5C63 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAB1EB5427436E0400CD5C63 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FAB1EB5627436E0400CD5C63 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAB1EB5727436E0400CD5C63 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAB1EB6227436E0400CD5C63 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAB1EB6327436E0400CD5C63 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAB1EB8A27436E0400CD5C63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAB1EB8B27436E0400CD5C63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		FAB1EB8D27436E0400CD5C63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 894WNW97KQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Save to Linksort Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.linksort.Save-to-Linksort.Extension";
+				PRODUCT_NAME = "Save to Linksort Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAB1EB8E27436E0400CD5C63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 894WNW97KQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Save to Linksort Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.linksort.Save-to-Linksort.Extension";
+				PRODUCT_NAME = "Save to Linksort Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAB1EB9127436E0400CD5C63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 894WNW97KQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Save to Linksort";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.linksort.Save-to-Linksort";
+				PRODUCT_NAME = "Save to Linksort";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAB1EB9227436E0400CD5C63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 894WNW97KQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Save to Linksort";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.linksort.Save-to-Linksort";
+				PRODUCT_NAME = "Save to Linksort";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAB1EB9427436E0400CD5C63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Save to Linksort.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 894WNW97KQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Save to Linksort Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.linksort.Save-to-Linksort.Extension";
+				PRODUCT_NAME = "Save to Linksort Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FAB1EB9527436E0400CD5C63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Save to Linksort.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 894WNW97KQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Save to Linksort Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.linksort.Save-to-Linksort.Extension";
+				PRODUCT_NAME = "Save to Linksort Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FAB1EB9827436E0400CD5C63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Save to Linksort.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 894WNW97KQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Save to Linksort";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.linksort.Save-to-Linksort";
+				PRODUCT_NAME = "Save to Linksort";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FAB1EB9927436E0400CD5C63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Save to Linksort.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 894WNW97KQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Save to Linksort";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.linksort.Save-to-Linksort";
+				PRODUCT_NAME = "Save to Linksort";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAB1EB3C27436E0400CD5C63 /* Build configuration list for PBXProject "Save to Linksort" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB1EB8A27436E0400CD5C63 /* Debug */,
+				FAB1EB8B27436E0400CD5C63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAB1EB8C27436E0400CD5C63 /* Build configuration list for PBXNativeTarget "Save to Linksort Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB1EB8D27436E0400CD5C63 /* Debug */,
+				FAB1EB8E27436E0400CD5C63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAB1EB9027436E0400CD5C63 /* Build configuration list for PBXNativeTarget "Save to Linksort (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB1EB9127436E0400CD5C63 /* Debug */,
+				FAB1EB9227436E0400CD5C63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAB1EB9327436E0400CD5C63 /* Build configuration list for PBXNativeTarget "Save to Linksort Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB1EB9427436E0400CD5C63 /* Debug */,
+				FAB1EB9527436E0400CD5C63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAB1EB9727436E0400CD5C63 /* Build configuration list for PBXNativeTarget "Save to Linksort (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB1EB9827436E0400CD5C63 /* Debug */,
+				FAB1EB9927436E0400CD5C63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAB1EB3927436E0400CD5C63 /* Project object */;
+}
