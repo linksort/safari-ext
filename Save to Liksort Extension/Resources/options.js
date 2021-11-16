@@ -1,79 +1,91 @@
-const message = document.getElementById("message");
-const clearButton = document.getElementById("clear");
-const authenticateButton = document.getElementById("authenticate");
+(function () {
+  const NULL = "NULL";
 
-const BASE_URI = `https://linksort.com`;
-const NULL = "NULL";
+  const message = document.getElementById("message");
+  const clearButton = document.getElementById("clear");
+  const authenticateButton = document.getElementById("authenticate");
+  const formContent = document.getElementById("formcontent");
+  const form = document.getElementById("form");
 
-function showLogin() {
-  message.innerText = "Please sign in to save your links to Linksort.";
-  clearButton.style.display = "none";
-  authenticateButton.style.display = "inline-block";
-}
-
-function showLogout() {
-  message.innerHTML =
-    "You are now signed into your Linksort browser extension. <br /><br />Close this window and use the Linksort icon in your browser's toolbar to save links as you browse.";
-  clearButton.style.display = "inline-block";
-  authenticateButton.style.display = "none";
-}
-
-function doAuth() {
-  const redirectURL = `${BASE_URI}/`;
-  const encodedRedirectURL = encodeURIComponent(redirectURL);
-  const authURL = `${BASE_URI}/oauth?redirect_uri=${encodedRedirectURL}`;
-
-  return launchWebAuthFlow(
-    {
-      interactive: true,
-      url: authURL,
-    },
-    (redirect) => {
-      const parsed = new URL(redirect);
-      const encodedToken = parsed.searchParams.get("token");
-      const token = decodeURIComponent(encodedToken);
-      chrome.storage.local.set({ token }, () => {
-        showLogout();
-      });
-    }
-  );
-}
-
-function launchWebAuthFlow({ url }, callback) {
-  chrome.tabs.create(
-    {
-      url,
-    },
-    (wInfo) => {
-      const windowId = wInfo.id;
-
-      function handleRedirect(details) {
-        if (details.url && details.url.includes("?token=")) {
-          callback(details.url);
-          chrome.tabs.remove(windowId);
-        }
-      }
-
-      chrome.webNavigation.onCommitted.addListener(handleRedirect, {
-        url: [{ hostEquals: "linksort.com" }],
-      });
-    }
-  );
-}
-
-chrome.storage.local.get(["token"], (values) => {
-  if (values.token && values.token !== NULL) {
-    showLogout();
-  } else {
-    showLogin();
-    doAuth();
+  function showLogin() {
+    clearButton.style.display = "none";
+    message.innerText =
+      "Before you can use this extension, you'll have to sign in.";
+    authenticateButton.style.display = "inline-block";
+    formContent.innerHTML = `
+        <div>
+          <p class="error" id="errorcontainer"></p>
+        </div>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" id="email" required autofocus>
+        </label>
+        <label>
+          <span>Password</span>
+          <input type="password" name="password" id="password" required>
+        </label>
+      `;
   }
-});
 
-clearButton.addEventListener("click", () => {
-  chrome.storage.local.set({ token: NULL }, () => {
-    showLogin();
+  function showLogout() {
+    message.innerHTML =
+      "You are signed into Linksort. &#x1f60a <br /><br /> You can now close this window and save links as you browse by clicking the Linksort icon in the upper toolbar.";
+    clearButton.style.display = "inline-block";
+    authenticateButton.style.display = "none";
+    formContent.innerHTML = "";
+  }
+
+  chrome.storage.local.get(["token"], (values) => {
+    if (values.token && values.token !== NULL) {
+      showLogout();
+    } else {
+      showLogin();
+    }
   });
-});
 
-authenticateButton.addEventListener("click", doAuth);
+  clearButton.addEventListener("click", () => {
+    chrome.storage.local.set({ token: NULL }, () => {
+      showLogin();
+    });
+  });
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    authenticateButton.disabled = true;
+
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    fetch("https://linksort.com/api/users/sessions", {
+      headers: new Headers({
+        "Content-Type": "application/json",
+      }),
+      method: "POST",
+      mode: "cors",
+      body: JSON.stringify({
+        email: email,
+        password: password,
+      }),
+    }).then((response) => {
+      response
+        .json()
+        .then((decoded) => {
+          if (response.status == 201) {
+            chrome.storage.local.set({ token: decoded.user.token }, () => {
+              showLogout();
+            });
+          } else {
+            authenticateButton.disabled = false;
+            document.getElementById("errorcontainer").innerText =
+              decoded.message || "That didn't work. Please try again.";
+          }
+        })
+        .catch(() => {
+          authenticateButton.disabled = false;
+          document.getElementById("errorcontainer").innerText =
+            "Something went wrong.";
+        });
+    });
+  });
+})();
